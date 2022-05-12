@@ -1,0 +1,312 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../fonts/font-icon.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Clout</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <header class="header">
+                <div class="header__container _container-fluid">
+                    <div class="header__inner">
+                        <a href="#" class="header__logo">
+                            <img src="../static/img/Logo.png" alt="" class="header__img">
+                        </a>
+                        <nav class="header__menu">
+                            <ul class="header__list">
+                                <li class="header__item">
+                                    <a href="" class="header__link">Портфолио</a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="" class="header__link">Услуги</a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="" class="header__link">Контакты</a>
+                                </li>
+                                <li class="header__item">
+                                    <a href="" class="header__link">Презентация</a>
+                                </li>
+
+                            </ul>
+                        </nav>
+
+
+                    </div>
+                </div>
+            </header>
+        </header>
+        <main class="main">
+            <div class="main-block">
+                <div class="main-block__container _container">
+                    <h4 class="main-block__subtitle">CLOUT PRODUCTION</h4>
+                    <h1 class="main-block__title">СНИМАЕМ РЕКЛАМНЫЕ РОЛИКИ И КОНТЕНТ ДЛЯ СОЦИАЛЬНЫХ СЕТЕЙ ПОД КЛЮЧ</h1>
+                    <p class="main-block__text">Видеопродакшн полного цикла: от идеи <br> до финальной реализации</p>
+
+                </div>
+            </div>
+            <div class="portfolio">
+                <div class="portfolio__container _container-fluid">
+                    <h2 class="portfolio__title">Портфолио</h2>
+                    <div class="portfolio__buttons ">
+                        <button class="portfolio__btn " data-filter=".rolik"> Рекламный ролик</button>
+                        <button class="portfolio__btn " data-filter=".brend"> Брендовый контент </button>
+                        <button class="portfolio__btn " data-filter=".animation"> Анимация </button>
+                        <button class="portfolio__btn " data-filter=".film">Имиджевые фильмы</button>
+                        <button class="portfolio__btn " data-filter=".otzev">Отзывы</button>
+                    </div>
+                    <div class="portfolio__inner">
+                        <div class="portfolio__items mix rolik">
+                            <a href="" class="portfolio__item">
+                                <img src="../static/img/rolik01.png" alt="" class="portfolio__image">
+                                <div class="portfolio__info">
+                                    <div class="portfolio__info-title">Cortes</div>
+                                    <div class="portfolio__info-text">Рекламный ролик для производителя агкогольных напитков</div>
+                                </div>
+                            </a>
+                            <a href="" class="portfolio__item">
+                                <img src="../static/img/rolik02.png" alt="" class="portfolio__image">
+                                <div class="portfolio__info">
+                                    <div class="portfolio__info-title">Jazzva</div>
+                                    <div class="portfolio__info-text">Рекламный ролик дл кафе</div>
+                                </div>
+                            </a>
+                            <a href="" class="portfolio__item">
+                                <img src="../static/img/rolik03.png" alt="" class="portfolio__image">
+                                <div class="portfolio__info">
+                                    <div class="portfolio__info-title">Ривьера</div>
+                                    <div class="portfolio__info-text">Рекламный ролик для ресторана </div>
+                                </div>
+                            </a>
+
+                            <a href="" class="portfolio__item">
+                                <img src="../static/img/rolik04.png" alt="" class="portfolio__image">
+                                <div class="portfolio__info">
+                                    <div class="portfolio__info-title">Zaboshta Room</div>
+                                    <div class="portfolio__info-text">Рекламный ролик для шоу-рума</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="portfolio__items mix brend">
+                            <a href="" class="portfolio__item">
+                                <img src="../static/img/brend01.png" alt="" class="portfolio__image">
+                                <div class="portfolio__info">
+                                    <div class="portfolio__info-title">WITH LOVE</div>
+                                    <div class="portfolio__info-text">Рекламный ролик для подарочных боксов</div>
+                                </div>
+                            </a>
+                            <a href="" class="portfolio__item">
+                                <img src="../static/img/brend02.png" alt="" class="portfolio__image">
+                                <div class="portfolio__info">
+                                    <div class="portfolio__info-title">Jazzva</div>
+                                    <div class="portfolio__info-text">Рекламный ролик дл кафе</div>
+                                </div>
+                            </a>
+                            <a href="" class="portfolio__item">
+                                <img src="../static/img/brend03.png" alt="" class="portfolio__image">
+                                <div class="portfolio__info">
+                                    <div class="portfolio__info-title">Ривьера</div>
+                                    <div class="portfolio__info-text">Съемка мероприятий </div>
+                                </div>
+                            </a>
+
+
+                        </div>
+                        <div class="portfolio__items mix animation">
+                            <a href="" class="portfolio__item">
+                                <img src="../static/img/animation01.png" alt="" class="portfolio__image">
+                                <div class="portfolio__info">
+                                    <div class="portfolio__info-title">Yanix</div>
+                                    <div class="portfolio__info-text">Анимационная афиша концерта</div>
+                                </div>
+                            </a>
+                            <a href="" class="portfolio__item">
+                                <img src="../static/img/animation02.png" alt="" class="portfolio__image">
+                                <div class="portfolio__info">
+                                    <div class="portfolio__info-title">Еду</div>
+                                    <div class="portfolio__info-text">Анимационный ролик о еде</div>
+                                </div>
+                            </a>
+                            <a href="" class="portfolio__item">
+                                <img src="../static/img/animation03.png" alt="" class="portfolio__image">
+                                <div class="portfolio__info">
+                                    <div class="portfolio__info-title">Marcel & Fills </div>
+                                    <div class="portfolio__info-text">Анимация логотипа</div>
+                                </div>
+                            </a>
+
+                            <a href="" class="portfolio__item">
+                                <img src="../static/img/animation04.png" alt="" class="portfolio__image">
+                                <div class="portfolio__info">
+                                    <div class="portfolio__info-title">FRESHMAN</div>
+                                    <div class="portfolio__info-text">Анимация рекламного макета</div>
+                                </div>
+                            </a>
+
+                        </div>
+
+
+                        <div class="portfolio__items mix film">
+                            <a href="" class="portfolio__item">
+                                <img src="../static/img/film.png" alt="" class="portfolio__image">
+                                <div class="portfolio__info">
+                                    <div class="portfolio__info-title">Проект "Школа фермеров "</div>
+                                    <div class="portfolio__info-text">Имиджевый фильм для Орловского ГАУ</div>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="portfolio__items mix otzev">
+                            <a href="" class="portfolio__item">
+                                <img src="../static/img/otzev01.png" alt="" class="portfolio__image">
+                                <div class="portfolio__info">
+                                    <div class="portfolio__info-title">Фотошкола</div>
+                                    <div class="portfolio__info-text">Серия видео для онлайн курсов</div>
+                                </div>
+                            </a>
+                            <a href="" class="portfolio__item">
+                                <img src="../static/img/otzev02.png" alt="" class="portfolio__image">
+                                <div class="portfolio__info">
+                                    <div class="portfolio__info-title">Кальянный бар </div>
+                                    <div class="portfolio__info-text">Серия видеоконтента для социальных сетей </div>
+                                </div>
+                            </a>
+                            <a href="" class="portfolio__item">
+                                <img src="../static/img/otzev03.png" alt="" class="portfolio__image">
+                                <div class="portfolio__info">
+                                    <div class="portfolio__info-title">Фитнес-студия</div>
+                                    <div class="portfolio__info-text"> Серия рекламных видеороликов </div>
+                                </div>
+                            </a>
+
+                            <a href="" class="portfolio__item">
+                                <img src="../static/img/otzev04.png" alt="" class="portfolio__image">
+                                <div class="portfolio__info">
+                                    <div class="portfolio__info-title">Химчистка обуви</div>
+                                    <div class="portfolio__info-text">Серия видеоконтента для социальных сетей </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio__button">
+                        <button class="portfolio__butt">Смотреть все работы</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="service">
+                <div class="service__container _container">
+                    <h2 class="service__title title">Услуги</h2>
+                    <div class="service__column">
+                        <div class="service__item">
+                            <img src="../static/img/service01.png" alt="" class="service__img">
+                            <div class="service__item-title">Рекламные ролики</div>
+                            <p class="service__text">Креативное видео с сюжетом о вашем товаре или услуге.</p>
+                        </div>
+                        <div class="service__item">
+                            <img src="../static/img/service02.png" alt="" class="service__img">
+                            <div class="service__item-title">Видео для бизнеса</div>
+                            <p class="service__text">Промо видео и имиджевые фильмы о вашей компании, товарах и услугах.</p>
+                        </div>
+                        <div class="service__item">
+                            <img src="../static/img/service03.png" alt="" class="service__img">
+                            <div class="service__item-title">Музыкальные клипы</div>
+                            <p class="service__text">Креативная визуализация песни любого типа и жанра.</p>
+                        </div>
+                        <div class="service__item">
+                            <img src="../static/img/service04.png" alt="" class="service__img">
+                            <div class="service__item-title">Контент для соцсетей</div>
+                            <p class="service__text">Видеоконтент разного формата для социальных сетей.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container _container">
+                <h2 class="footer__title title">Заказать работу</h2>
+                <div class="footer__inner">
+                    <div class="footer__box">
+                        <a href="tel:+79996046525" class="footer__tel">+7 (999) 604-65-25</a>
+                        <a href="mail:clout.film.co@gmail.com" class="footer__mail">clout.film.co@gmail.com</a>
+                        <a href="" class="footer__file">Скачать клиентский бриф</a>
+                        <a href="" class="footer__file">Скачать презентацию</a>
+                        <div class="footer__city">Орёл / Москва</div>
+                        <div class="footer__column">
+                            <div class="footer__item">
+                                <a href="" class="footer__link">
+                                    <img src="../static/img/footer01.png" alt="" class="footer__link-img">
+                                </a>
+                                <a href="" class="footer__link">
+                                    <img src="../static/img/footer02.png" alt="" class="footer__link-img">
+                                </a>
+                                <a href="" class="footer__link">
+                                    <img src="../static/img/footer03.png" alt="" class="footer__link-img">
+                                </a>
+                                <a href="" class="footer__link">
+                                    <img src="../static/img/footer04.png" alt="" class="footer__link-img">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <form action="" class="footer__form">
+                        <div class="footer__piece">
+                            <div class="footer__piece-title">Ваш e-mail:</div>
+                            <input type="text" class="footer__input">
+                        </div>
+                        <div class="footer__piece">
+                            <div class="footer__piece-title">Ваше имя:</div>
+                            <input type="text" class="footer__input">
+                        </div>
+                        <div class="footer__piece">
+                            <div class="footer__piece-title">Ваш телефон:</div>
+                            <input type="number" placeholder="+7 (999)-999-99-99" class="footer__input">
+                        </div>
+                        <div class="footer__piece">
+                            <div class="footer__piece-title">Ваш запрос:</div>
+                            <textarea type="text" placeholder="Пример : Добрый день! Хочу заказать у Вас рекламный ролик для салона красоты." class="footer__input"></textarea>
+                        </div>
+                        <button class="footer__button">Подобрать</button>
+                        <p class="footer__form-text">«Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности»</p>
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-bottom">
+            <div class="footer-bottom__container _container">
+                <a href="" class="footer-bottom__logo">
+                    <img src="../static/img/Logo.png" alt="" class="footer-bottom__img">
+                </a>
+                <div class="footer-bottom__box">
+                    <div class="footer-bottom__text">ОРЁЛ МОСКВА
+                    </div>
+                    <a href="tel:+79996046525" class="footer-bottom__tel">
+                        +7 (999) 604 65 25
+                     </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="{% static 'js/files/mixitup.min.js' %}"></script>
+    <script src="{% static 'js/files/main.js' %}"></script>
+</body>
+
+</html>
