@@ -1,3 +1,18 @@
 from django.contrib import admin
 
-# Register your models here.
+from newApp.models import Score, Videomaker, Worktag
+
+
+@admin.register(Score)
+class ScoreAdmin(admin.ModelAdmin):
+	pass
+
+
+@admin.register(Worktag)
+class WorktagAdmin(admin.ModelAdmin):
+	pass
+
+
+@admin.register(Videomaker)
+class VideomakerAdmin(admin.ModelAdmin):
+	pass
