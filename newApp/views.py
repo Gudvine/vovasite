@@ -1,6 +1,14 @@
+from django.views.generic import ListView
 from django.shortcuts import render
-from django.http import HttpResponse
+
+
+from .models import Videomaker
 
 
 def index(request):
 	return render(request, "index.html")
+
+
+class SearchResultsView(ListView):
+	model = Videomaker
+	template_name = 'search_results.html'

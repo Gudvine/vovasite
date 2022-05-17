@@ -1,0 +1,9 @@
+<h1>Result<h1>
+
+<ul>
+  {% for videomaker in object_list %}
+    <li>
+      {{ videomaker.first_name }}, {{ videomaker.last_name }}, {{videomaker.free_status}}, {{videomaker.work_tag}}
+    </li>
+  {% endfor %}
+</ul>
