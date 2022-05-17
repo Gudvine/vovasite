@@ -1,3 +1,10 @@
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static '/css/search_style.css' %}">
+    <title>Результаты поиска</title>
+</head>
+
+<body>
 <h1>Result<h1>
 
 <ul>
@@ -7,3 +14,4 @@
     </li>
   {% endfor %}
 </ul>
+</body>
