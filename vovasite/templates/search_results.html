@@ -1,16 +1,18 @@
 {% load static %}
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static '/css/search_style.css' %}">
     <title>Результаты поиска</title>
 </head>
 
 <body>
-<h1>Result<h1>
+<h1>Здесь представлены видеомейкеры, которые могут Вам помочь:<h1>
 
 <ul>
   {% for videomaker in object_list %}
     <li>
-      {{ videomaker.first_name }}, {{ videomaker.last_name }}, {{videomaker.free_status}}, {{videomaker.work_tag}}
+      {{ videomaker.first_name }} {{ videomaker.last_name }} {{videomaker.score.score_value}} {{videomaker.work_tag.tag_name}}
+      {{videomaker.experience_level}} года {{videomaker.phone_number}} почта: {{videomaker.maker_mail}}
     </li>
   {% endfor %}
 </ul>
