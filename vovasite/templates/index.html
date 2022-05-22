@@ -30,16 +30,13 @@
                         <nav class="header__menu">
                             <ul class="header__list">
                                 <li class="header__item">
-                                    <a href="" class="header__link">Портфолио</a>
+                                    <a href="" class="header__link">Личный кабинет</a>
                                 </li>
                                 <li class="header__item">
-                                    <a href="" class="header__link">Услуги</a>
+                                    <a href="#popup" class="header__link popup-link">Регистрация</a>
                                 </li>
                                 <li class="header__item">
-                                    <a href="" class="header__link">Контакты</a>
-                                </li>
-                                <li class="header__item">
-                                    <a href="" class="header__link">Презентация</a>
+                                    <a href="#popup1" class="header__link popup-link">Заказать работу</a>
                                 </li>
 
                             </ul>
@@ -50,11 +47,59 @@
                 </div>
             </header>
         </header>
+        <div id="popup" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#header" class="popup__close close-popup">X</a>
+                    <a href="" class="popup__title ">Регистрация</a>
+
+
+                    <form action="" class="popup__form">
+                        <div class="popup__subtitle">Логин</div>
+                        <input type="email" class="popup__email">
+                        <div class="popup__subtitle">Пароль</div>
+                        <input type="password" class="popup__password">
+                    </form>
+
+                    <a href="#" class="popup__btn">Зарегистрироваться</a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="popup1" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#header" class="popup__close close-popup">X</a>
+                    <a href="" class="popup__title ">Заказать работу</a>
+
+
+                    <form action="" class="popup__form">
+                        <div class="popup__subtitle">Тип работы</div>
+                        <select name="form[]" class="popup__select">
+                            <option value="1" selected> Реклама</option>
+                            <option value="2">Контент для социальных сетей</option>
+                            <option value="3">Клипы</option>
+                           
+                           </select>
+                        <div class="popup__subtitle">Бюджет</div>
+                        <input type="" class="popup__pass">
+                        <div class="popup__subtitle">Сроки</div>
+                        <input type="" class="popup__password">
+                    </form>
+
+                    <a href="#" class="popup__btn">Заказать</a>
+
+                </div>
+            </div>
+
+        </div>
         <main class="main">
             <div class="main-block">
                 <div class="main-block__container _container">
                     <h4 class="main-block__subtitle">CLOUT PRODUCTION</h4>
-                    <h1 class="main-block__title">СНИМАЕМ РЕКЛАМНЫЕ РОЛИКИ И КОНТЕНТ ДЛЯ СОЦИАЛЬНЫХ СЕТЕЙ ПОД КЛЮЧ</h1>
+                    <h1 class="main-block__title">Подбираем видомейкеров под Ваши запросы</h1>
                     <p class="main-block__text">Видеопродакшн полного цикла: от идеи <br> до финальной реализации</p>
 
                 </div>
@@ -264,18 +309,23 @@
                         </div>
 
                     </div>
-                    <form action="" class="footer__form">
+                    <form action="" method="get" class="footer__form">
                         <div class="footer__piece">
                             <div class="footer__piece-title">Тип ролика:</div>
+                            <!--<input type="text" class="footer__input">-->
+                            <select size="3" class="footer__input">
+                                <option selected value="1">Реклама</option>
+                                <option selected value="2">Клипы</option>
+                                <option selected value="3">Контент для соцсетей</option>
+                            </select>
+                        </div>
+                        <div class="footer__piece">
+                            <div class="footer__piece-title">Сроки:</div>
                             <input type="text" class="footer__input">
                         </div>
                         <div class="footer__piece">
-                            <div class="footer__piece-title">Ваше имя:</div>
-                            <input type="text" class="footer__input">
-                        </div>
-                        <div class="footer__piece">
-                            <div class="footer__piece-title">Ваш телефон:</div>
-                            <input type="number" placeholder="+7 (999)-999-99-99" class="footer__input">
+                            <div class="footer__piece-title">Бюджет:</div>
+                            <input type="number" placeholder="50000 рублей" class="footer__input">
                         </div>
                         <div class="footer__piece">
                             <div class="footer__piece-title">Ваш запрос:</div>

@@ -1,4 +1,45 @@
-body{
-	background-color: #972437;
-	font-family: "Raleway";
+body {
+  font-family: "Raleway";
+}
+
+.result-table {
+  list-style: none;
+  margin: 0 -20px 0 0;
+  padding: 0;
+}
+
+.videomaker-wrapper {
+  display: block;
+  padding: 15px;
+  border: 2px solid #000000;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 15px;
+
+  width: 100%;
+
+  transition: width 0.2s;
+  background: rgb(241, 210, 210);
+  margin: 40px;
+
+  height: 300px;
+}
+
+@media only screen and (min-width: 450px) {
+  .videomaker-wrapper {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .videomaker-wrapper {
+    width: 33.333%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .videomaker-wrapper {
+    width: 25%;
+  }
 }

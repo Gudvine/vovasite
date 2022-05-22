@@ -1,0 +1,39 @@
+.lich__title {
+    font-family: 'Montserrat';
+    margin-bottom: 100px;
+    padding: 15px;
+}
+
+.lich__subtitle {
+    font-family: 'Montserrat';
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 15px;
+}
+
+.lich__box {
+    margin: 0 auto;
+    width: 800px;
+    padding: 15px 15px 50px 15px;
+    border-radius: 10px;
+    border: 1px solid #a7a4a4;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lich__name {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.lich__number {
+    text-align: center;
+    font-weight: 600;
+}
+
+.lich__stutus {
+    font-family: 'Montserrat';
+    text-align: center;
+    font-weight: 600;
+}
