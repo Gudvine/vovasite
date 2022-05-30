@@ -1,0 +1,56 @@
+body {
+  font-family: "Raleway";
+}
+
+.result-table {
+  list-style: none;
+  margin: 0 -20px 0 0;
+  padding: 0;
+}
+
+.videomaker-wrapper {
+  display: block;
+  padding: 15px;
+  border: 2px solid #000000;
+  position: relative;
+  float: left;
+  text-align: center;
+  border-radius: 15px;
+
+  width: 100%;
+
+  transition: width 0.2s;
+  background: rgb(204, 200, 200);
+  margin: 40px;
+
+  height: 380px;
+}
+.button_click{
+  background-color: #9b9b9b; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 15px;
+}
+
+@media only screen and (min-width: 450px) {
+  .videomaker-wrapper {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .videomaker-wrapper {
+    width: 33.333%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .videomaker-wrapper {
+    width: 25%;
+  }
+}
