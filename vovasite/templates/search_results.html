@@ -12,8 +12,8 @@
   {% for videomaker in object_list %}
   {% if videomaker.free_status == True %}
     <li class="videomaker-wrapper">
-      {{ videomaker.first_name }} {{ videomaker.last_name }} <br> Рейтинг: {{videomaker.score.score_value}}<br> Вид работ: {{videomaker.work_tag.tag_name}}<br>
-      Стаж: {{videomaker.experience_level}} года<br> Номер телефона: {{videomaker.phone_number}}<br> почта: {{videomaker.maker_mail}}
+      {{ videomaker.first_name }} {{ videomaker.last_name }} <br> Рейтинг: {{videomaker.score.score_value}}<br> Вид роликов: {{videomaker.work_tag.tag_name}}<br>
+      Стаж: {{videomaker.experience_level}} года<br> Номер телефона: {{videomaker.phone_number}}<br> почта: {{videomaker.maker_mail}}<br> <div class="button_click"><a href="">Связяаться</a></div>
     </li>
   {% endif %}
   {% endfor %}

@@ -1,3 +1,4 @@
+from urllib import request
 from django.views.generic import ListView
 from django.shortcuts import render
 
@@ -12,3 +13,6 @@ def index(request):
 class SearchResultsView(ListView):
 	model = Videomaker
 	template_name = 'search_results.html'
+
+def cabinet(request):
+	return render(request, "cabinet.html")
