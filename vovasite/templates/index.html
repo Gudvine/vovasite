@@ -75,21 +75,21 @@
                     <a href="" class="popup__title ">Заказать ролик</a>
 
 
-                    <form action="" class="popup__form">
+                    <form action="{% url 'search_results' %}" class="popup__form">
                         <div class="popup__subtitle">Тип ролика</div>
                         <select name="form[]" class="popup__select">
-                            <option value="1" selected> Реклама</option>
-                            <option value="2">Контент для социальных сетей</option>
-                            <option value="3">Клипы</option>
+                            <option value="Реклама" selected>Реклама</option>
+                            <option value="Контент для социальных сетей">Контент для социальных сетей</option>
+                            <option value="Клипы">Клипы</option>
                            
                            </select>
                         <div class="popup__subtitle">Бюджет</div>
                         <input type="" class="popup__pass">
                         <div class="popup__subtitle">Сроки</div>
                         <input type="" class="popup__password">
+                        <button type="submit" class="popup__btn">Заказать</button>
                     </form>
 
-                    <a href="#" class="popup__btn">Заказать</a>
 
                 </div>
             </div>

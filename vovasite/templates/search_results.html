@@ -8,6 +8,20 @@
 <body>
 <h1>Здесь представлены видеомейкеры, которые могут Вам помочь:<h1>
 
+<h2>Фильтры:<h2>
+<form method="get" action="{% url 'filter' %}">
+  <label>Стаж от 2 до 10</label>
+  <input type="range" min="2" max="10" step="1" value="2" placeholder="2-10"> 
+  <label>Рейтинг</label>
+  {% for score in view.get_score %}
+    <li>
+      <input type="checkbox" name="optionchecked" value="4.0" checked>
+      <label>{{ score }}</label>
+    </li>
+  {% endfor %}
+  <button type="submit">Применить</button>
+</form>
+
 <ul class="result-table">
   {% for videomaker in object_list %}
   {% if videomaker.free_status == True %}

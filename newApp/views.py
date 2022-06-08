@@ -3,7 +3,12 @@ from django.views.generic import ListView
 from django.shortcuts import render
 
 
-from .models import Videomaker
+from .models import Videomaker, Score
+
+
+class ScoreExp:
+	def get_score(self):
+		return Score.objects.all()
 
 
 def index(request):
@@ -11,8 +16,30 @@ def index(request):
 
 
 class SearchResultsView(ListView):
+	paginate_by = 3
 	model = Videomaker
 	template_name = 'search_results.html'
 
+	def get_queryset(self):
+		queryset = self.request.GET.get('value')
+		object_list = Videomaker.objects.filter(work_tag__tag_name__icontains=queryset)
+		return object_list
+
+	def get_context_data(self, *args, **kwargs):
+		context = super().get_context_data(*args, **kwargs)
+		context["value"] = self.request.GET.get("value")
+		return context
+
+
 def cabinet(request):
 	return render(request, "cabinet.html")
+
+
+class FilterVideomakerView(ListView):
+	model = Videomaker
+	template_name = 'search_results.html'
+
+	def get_queryset(self):
+		queryset = self.request.GET.get('optionchecked')
+		object_list = Videomaker.objects.filter(experience_level__contains=queryset)
+		return object_list
