@@ -25,10 +25,12 @@
 <ul class="result-table">
   {% for videomaker in object_list %}
   {% if videomaker.free_status == True %}
+  <a href="/search_results/{{ videomaker.pk }}">
     <li class="videomaker-wrapper">
       {{ videomaker.first_name }} {{ videomaker.last_name }}, {{ videomaker.city }}<br> Рейтинг: {{videomaker.score.score_value}}<br> Вид роликов: {{videomaker.work_tag.tag_name}}<br>
       Стаж: {{videomaker.experience_level}} года<br> Номер телефона: {{videomaker.phone_number}}<br> почта: {{videomaker.maker_mail}}<br> <div class="button_click"><a href="{{videomaker.telegram_link}}">Связяаться</a></div>
     </li>
+  </a>
   {% endif %}
   {% endfor %}
 </ul>

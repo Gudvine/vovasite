@@ -1,5 +1,5 @@
 from urllib import request
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 from django.shortcuts import render
 
 
@@ -29,6 +29,13 @@ class SearchResultsView(ListView):
 		context = super().get_context_data(*args, **kwargs)
 		context["value"] = self.request.GET.get("value")
 		return context
+
+
+class VideomakerDetailView(DetailView):
+	model = Videomaker
+	template_name = "maker_detail.html"
+	pk_url_kwarg = 'pk'
+	context_object_name = 'maker'
 
 
 class CabinetView(ListView):
