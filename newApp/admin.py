@@ -1,6 +1,7 @@
+from ast import Or
 from django.contrib import admin
 
-from newApp.models import Score, Videomaker, Worktag
+from newApp.models import Score, Videomaker, Worktag, Order
 
 
 @admin.register(Score)
@@ -15,4 +16,9 @@ class WorktagAdmin(admin.ModelAdmin):
 
 @admin.register(Videomaker)
 class VideomakerAdmin(admin.ModelAdmin):
+	pass
+
+
+@admin.register(Order)
+class OrderAdmin(admin.ModelAdmin):
 	pass

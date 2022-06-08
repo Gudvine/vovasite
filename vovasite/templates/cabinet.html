@@ -21,6 +21,7 @@
     <h3 class="lich__subtitle">
         Заказы
     </h3>
+    {% for order in object_list %}
     <div class="lich__box">
         <div class="lich_1">
             <div class="lich__name">Номер заказа</div>
@@ -37,6 +38,7 @@
         </div>
 
     </div>
+    {% endfor %}
 </body>
 
 </html>

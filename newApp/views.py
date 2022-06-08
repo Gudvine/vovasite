@@ -3,7 +3,7 @@ from django.views.generic import ListView
 from django.shortcuts import render
 
 
-from .models import Videomaker, Score
+from .models import Order, Videomaker, Score
 
 
 class ScoreExp:
@@ -21,7 +21,7 @@ class SearchResultsView(ListView):
 	template_name = 'search_results.html'
 
 	def get_queryset(self):
-		queryset = self.request.GET.get('value')
+		queryset = self.request.GET.get('value', default="")
 		object_list = Videomaker.objects.filter(work_tag__tag_name__icontains=queryset)
 		return object_list
 
@@ -31,8 +31,9 @@ class SearchResultsView(ListView):
 		return context
 
 
-def cabinet(request):
-	return render(request, "cabinet.html")
+class CabinetView(ListView):
+	model = Order
+	template_name = 'cabinet.html'
 
 
 class FilterVideomakerView(ListView):
