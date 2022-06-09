@@ -25,9 +25,13 @@
     <div class="lich__box">
         <div class="lich_1">
             <div class="lich__name">Номер заказа</div>
-            <div class="lich__number">1111</div>
+            <div class="lich__number">{{ order.id }}</div>
+            <div class="lich__name">Сроки</div>
+            <div class="lich__number">{{ order.time_days }} дней</div>
         </div>
         <div class="lich__2">
+            <div class="lich__name">Исполнитель</div>
+            <div class="lich__number">{{ order.maker.first_name }} {{ order.maker.last_name }}</div>
             <div class="lich__name">Статус заказа</div>
             <div class="lich__stutus"><select>
                 <option value="подписание договора">подписание договора</option>

@@ -12,14 +12,17 @@
 <form method="get" action="{% url 'filter' %}">
   <label>Стаж от 2 до 10</label>
   <input type="range" min="2" max="10" step="1" value="2" placeholder="2-10"> 
-  <label>Рейтинг</label>
-  {% for score in view.get_score %}
-    <li>
-      <input type="checkbox" name="optionchecked" value="4.0" checked>
-      <label>{{ score }}</label>
-    </li>
-  {% endfor %}
-  <button type="submit">Применить</button>
+  <label>Высокий рейтинг</label>
+ <input type="checkbox" name="optionchecked" value="4.0" checked>
+  <label>Город</label>
+  <input type="text">
+  <button type="submit">Применить</button> <br>
+  <label>Категория</label>
+  <select name="form[]">
+    <option value="Реклама" selected>Реклама</option>
+    <option value="Контент для социальных сетей">Контент для социальных сетей</option>
+    <option value="Клипы">Клипы</option>
+   </select>
 </form>
 
 <ul class="result-table">
